@@ -1,0 +1,431 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #EDF2F3;
+}
+
+/* Navbar */
+.navbar {
+    background: #00031d;
+    font-family: 'Arima Madurai';
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+/* HEADER */
+.header {
+    height: 100vh;
+    position: relative;
+    margin-top: -4.15%;
+    /* border-bottom: 1px solid black; */
+}
+.header-dark {
+    background: #000428;
+    height: 50%;
+}
+.header-light{
+    height: 50%;
+}
+.about-text-1 {
+    font-family: Farsan;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.about-text-2 {
+    margin-top: 3%;
+    font-family: Farsan;
+    text-align: center;
+    text-shadow: -1px 1px 3px #999999, -2px 2px 1px rgba(0, 210, 255, 0.2), -3px 3px 1px rgba(0, 210, 255, 0.2), -4px 4px 1px rgba(0, 210, 255, 0.2);
+}
+.photo {
+    position: absolute;
+    border: 8px solid #EDF2F3;
+    width: 17.5%;
+    top: 33%;
+    left: 42%;
+}
+/* HEADER */
+
+/* ABOUT / ME */
+.about {
+    /* width: 75%; */
+    background: linear-gradient(to right, #000428, #000428, #004e92);
+}
+.about h3 {
+    font-family: 'Arima Madurai';
+    margin-top: 10px;
+}
+.about h6 {
+    font: 22px Farsan;
+}
+
+.about .me-text {
+    font: 18px Farsan;
+}
+
+.about .garis {
+    border-right: none;
+    border-bottom: 1px solid whitesmoke;
+    margin: 8px 0 8px 0;
+}
+/* ABOUT / ME */
+
+/* EXPERIENCE */
+#section-experience {
+    /* margin: 2% auto 10% auto; */
+    width: 75%;
+    padding: 0 0 8% 0;
+}
+.row-experience {
+    /* background: linear-gradient(to right, #000428, #000428, #004e92); */
+    background-color: #000428;
+    color: white;
+    }
+.exp-item {
+    color: white;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.5s;
+    background-position: center;
+}
+.exp-item:hover {
+    box-shadow: 0 0 5px 0px #00031df5;
+    /* background-color: rgb(255 255 255 / 0.9); */
+    /* background: rgb(255 255 255 / 0.9) radial-gradient(circle, transparent 1%, rgba(0, 0, 0, 0.1) 1%) center/11000%; */
+    /*     color: #333; */
+    /* box-shadow: 0 0 10px 1px #ffffff85; */
+    /*     transform: translate(0px, -15px); */
+}
+.exp-item.left {
+    background: linear-gradient(to right, #000428, #000428, #004e92);
+    text-align: left !important;
+}
+.exp-item.right {
+    background: linear-gradient(to right, #004e92,#000428, #000428);
+    text-align: right !important;
+    margin: 0 0 auto auto;
+}
+/* .exp-item:hover.left {
+    transform: translate(10%, 0);
+}
+.exp-item:hover.right {
+    transform: translate(-10%, 0);
+} */
+.exp-item img {
+    width: 15vw;
+    height: 15vw;
+    object-fit: contain;
+    object-position: center;
+}
+.exp-item .title {
+    width: 90%;
+}
+.exp-item .title h3 {
+    font-family: 'Arima Madurai';
+}
+.exp-item .title h5 {
+    font-family: Farsan;
+    margin-bottom: .1rem;
+}
+.exp-item svg {
+    visibility: hidden;
+    margin: 4% 0 0 auto;
+}
+.exp-item.right svg {
+    margin: 4% auto 0 0;
+}
+.exp-item:hover svg {
+    visibility: visible;
+}
+
+/* Modal */
+.modal{
+    background: #000428e6;
+}
+.modal-content {
+    box-shadow: 0 0 10px 2px #ffffff5c;
+}
+.modal-title {
+    font-family: 'Arima Madurai';
+    font-weight: 700;
+}
+.exp-detail p {
+    font-family: 'Farsan';
+    font-size: 20px;
+}
+.table th {
+    font-family: 'Arima Madurai';
+}
+
+.table td {
+    font-family: 'Arima Madurai';
+    font-size: 1.05rem;
+}
+
+/* Contact */
+#section-contact {
+    background: #000428;
+}
+.contact-email h4 {
+    font-family: 'Arima Madurai';
+    margin: 0 auto;
+}
+.row-contact a {
+    text-decoration: none;
+    color: white;
+    transition: all cubic-bezier(0.4, 0, 1, 1) .3s;
+}
+.contact-email h4:hover {
+    text-shadow: -1px 1px 3px #999999;
+}
+.contact-list ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.contact-list ul li {
+    margin: 0 1rem;
+}
+.row-contact li a i {
+    font-size: 1.45rem;
+    transition: all cubic-bezier(0.4, 0, 1, 1) .2s;
+}
+.row-contact li a:hover i {
+    transform: scale(1.25);
+}
+.row-contact li a:hover i.fa-linkedin {
+    color: #0a66c2;
+}
+.row-contact li a:hover i.fa-github {
+    color: #24292e;
+}
+.row-contact li a:hover i.fa-telegram {
+    color: #32aade;
+}
+.row-contact li a:hover i.fa-whatsapp {
+    color: #00bfa5;
+}
+.row-contact li a:hover i.fa-facebook-f {
+    color: #4867aa;
+}
+.row-contact li a:hover i.fa-twitter {
+    color: #1da1f2;
+}
+.row-contact li a:hover i.fa-instagram {
+    background: -webkit-linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Technology */
+#section-techno {
+    margin: 0 auto 5% auto;
+    width: 75%;
+}
+.tools-list{
+    list-style: none;
+}
+.tools-list .col {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.tools-list .fab{
+    font-size: 4vw;
+}
+.tools-list img{
+    width: 4vw;
+    height: 4vw;
+    object-fit: contain;
+    object-position: center;
+}
+/* Technology */
+
+
+/* Utility */
+.text-shadow {
+    text-shadow: -1px 1px 3px #999999, -2px 2px 1px rgba(0, 210, 255, 0.2), -3px 3px 1px rgba(0, 210, 255, 0.2), -4px 4px 1px rgba(0, 210, 255, 0.2);
+}
+.button{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.button-white {
+    font-family: 'Farsan';
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    color: white;
+    transition: all cubic-bezier(0.4, 0, 1, 1) .3s;
+}
+.button-white:hover {
+    color: #000428;
+    background: #ffffff;
+}
+i.fab {
+    font-size: 1.75rem;
+}
+.fa-html5 {
+    color: #fc490b;
+}
+.fa-css3-alt {
+    color: #2196f3;
+}
+.fa-bootstrap {
+    color: #7952b3;
+}
+.fa-git-alt {
+    color: #f64d27;
+}
+.fa-gitlab {
+    color: #e65328;
+}
+.fa-php {
+    color: #8892bf;
+}
+.fa-js {
+    color: #efd71e;
+}
+.fa-node-js {
+    color: #026e00;
+}
+.fa-laravel {
+    color: #ff2d20;
+}
+
+
+/* MOBILE VERSION */
+@media (max-width: 1199.98px) {
+    .photo {
+        width: 20%;
+        left: 40%;
+    }
+}
+@media (max-width: 991.98px) {
+    .about-text-1,
+    .about-text-2 {
+        font-size: 8vw;
+    }
+    .photo {
+        width: 21.5%;
+        left: 40%;
+    }
+    #section-experience {
+        max-width: 100% !important;
+        width: 90%;
+    }
+    .exp-item {
+        width: 90%;
+    }
+    .modal-dialog {
+        max-width: 100% !important;
+        width: 80% !important;
+    }
+    .tools-list .fab{
+        font-size: 5vw;
+    }
+    .tools-list img{
+        width: 5vw;
+        height: 5vw;
+    }
+}
+@media (max-width: 767.98px) {
+    .about-text-1,
+    .about-text-2 {
+        font-size: 8vw;
+    }
+    .photo {
+        width: 30%;
+        left: 35%;
+    }
+    #section-experience {
+        max-width: 100% !important;
+        width: 90%;
+    }
+    .exp-item {
+        width: 100%;
+    }
+    .exp-item .title h3 {
+        font-size: 4vw;
+    }
+    #section-techno .display-4 {
+        text-align: center;
+    }
+    #section-techno {
+        width: 90%;
+    }
+}
+@media (max-width: 575.98px) {
+    .about-text-1,
+    .about-text-2 {
+        font-size: 9vw;
+    }
+    .photo {
+        width: 35%;
+        left: 33%;
+    }
+    .row.row-experience .display-4 {
+        font-size: 40px;
+    }
+    .modal-dialog {
+        width: auto !important;
+    }
+    .modal-title {
+        font-size: 5vw;
+    }
+    #section-techno .display-4 {
+        font-size: 40px;
+    }
+    .tools-list .fab{
+        font-size: 6vw;
+    }
+    .tools-list img{
+        width: 6vw;
+        height: 6vw;
+    }
+    .row.contact-title .display-4 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .about-text-1,
+    .about-text-2 {
+        font-size: 10vw;
+    }
+    .photo {
+        width: 40%;
+        left: 30%;
+        top: 35%;
+    }
+    .tools-list .fab{
+        font-size: 7vw;
+    }
+    .tools-list img{
+        width: 7vw;
+        height: 7vw;
+    }
+    .contact-title {
+        margin-bottom: 1rem !important;
+    }
+    .row-contact a {
+        font-size: 5vw;
+    }
+    .contact-list ul li {
+        margin: 0 .75rem;
+    }
+}
