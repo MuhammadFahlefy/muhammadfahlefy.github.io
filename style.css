@@ -18,8 +18,10 @@ body {
     color: white !important;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
-
 .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     margin-right: 30px;
 }
@@ -81,6 +83,49 @@ body {
     margin: 8px 0 8px 0;
 }
 /* ABOUT / ME */
+
+/* PROEJCT */
+#section-project {
+    width: 75%;
+    padding: 0 0 8% 0;
+}
+.project-card {
+    height: 30vw;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+}
+.project-description {
+    background: #00031d;
+    border-radius: 0 0 15px 15px;
+}
+.project-overlay {
+    background: #00031d;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    border-radius: 15px 15px 0 0;
+    transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.4s;
+}
+.project-card:hover .project-overlay {
+    height: 45px;
+    bottom: 0;
+    padding-top: 15px;
+}
+.project-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+.project-image img {
+    height: 25vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* END PROEJCT */
 
 /* EXPERIENCE */
 #section-experience {
@@ -328,7 +373,8 @@ i.fab {
         width: 21.5%;
         left: 40%;
     }
-    #section-experience {
+    #section-experience,
+    #section-project {
         max-width: 100% !important;
         width: 90%;
     }
@@ -371,6 +417,12 @@ i.fab {
     }
     #section-techno {
         width: 90%;
+    }
+    .project-card {
+        height: 70vw;
+    }
+    .project-image img {
+        height: 55vw;
     }
 }
 @media (max-width: 575.98px) {
