@@ -170,7 +170,7 @@ body {
 .exp-item.right {
   background: linear-gradient(to right, #004e92, #000428, #000428);
   text-align: right !important;
-  margin: 0 0 auto auto;
+  margin: 0 0 20px auto;
 }
 /* .exp-item:hover.left {
     transform: translate(10%, 0);
