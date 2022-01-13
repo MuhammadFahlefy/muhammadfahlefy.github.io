@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- My Font -->
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Farsan&display=swap" rel="stylesheet">
@@ -40,13 +41,13 @@
     <!-- HEADER -->
     <div class="header" id="section-header">
       <div class="header-dark d-flex align-items-center">
-        <h1 class="display-3 about-text-1 w-100">Hello! I'm Muhammad Fahlefy</h1>
+        <h1 class="display-3 about-text-1 w-100" data-aos="fade-down">Hello! I'm Muhammad Fahlefy</h1>
       </div>
 
-      <img src="img/Me-1.jpg" class="photo img-fluid rounded-circle" alt="Photo">
+      <img src="img/Me-1.jpg" class="photo img-fluid rounded-circle" alt="Photo" data-aos="zoom-out">
       
       <div class="header-light d-flex align-items-center">
-        <h1 class="display-3 about-text-2 w-100">Web Programmer</h1>
+        <h1 class="display-3 about-text-2 w-100" data-aos="fade-up">Web Programmer</h1>
       </div>
     </div>
     <!-- END HEADER -->
@@ -58,7 +59,7 @@
           <h4 class="display-4 text-uppercase mx-auto text-shadow mb-5">Projects</h4>
         </div>
         <div class="row justify-content-center">
-          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="250">
             <div class="card project-card mb-3">
               <div class="project-image">
                 <a href="img/laundryshop-company-profile-web-2.png" data-fancybox="projects" data-caption="Laundryshop.id">
@@ -80,7 +81,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="500">
             <div class="card project-card mb-3">
               <div class="project-image">
                 <a href="img/movie-game-list-web-3.png" data-fancybox="projects" data-caption="Movie & Game List Web App">
@@ -102,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="750">
             <div class="card project-card mb-3">
               <div class="project-image">
                 <a href="img/luxspace-web-1.png" data-fancybox="projects" data-caption="LuxSpace Web App">
@@ -137,7 +138,7 @@
       <!-- <div class="row row-experience mt-n4 rounded-lg shadow-lg pl-5 pr-3 py-5"> -->
       <div class="row row-experience rounded-lg shadow-lg px-4 py-5">
           <h4 class="display-4 text-uppercase mx-auto mb-5">My Experience</h4>
-            <div class="row exp-item left" data-toggle="modal" data-target="#modal-3">
+            <div class="row exp-item left" data-aos="fade-left" data-duration="500" data-toggle="modal" data-target="#modal-3">
               <!-- <img src="img/eannovate.png" alt="logo-eannovate"> -->
               <div class="title">
                 <h3>PT GRR Indonesia Digital</h3>
@@ -148,7 +149,7 @@
                 <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"></path>
               </svg>
             </div>
-            <div class="row exp-item right" data-toggle="modal" data-target="#modal-1">
+            <div class="row exp-item right" data-aos="fade-right" data-duration="500" data-toggle="modal" data-target="#modal-1">
               <!-- <img src="img/eannovate.png" alt="logo-eannovate"> -->
               <svg viewBox="0 0 16 16" class="bi bi-arrows-angle-expand" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1.75em" width="1.75em">
                 <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"></path>
@@ -159,7 +160,7 @@
                 <h5>September 2019 - December 2020</h5>
               </div>
             </div>
-            <div class="row exp-item left" data-toggle="modal" data-target="#modal-2">
+            <div class="row exp-item left" data-aos="fade-left" data-duration="500" data-toggle="modal" data-target="#modal-2">
               <!-- <img src="img/eannovate.png" alt="logo-eannovate"> -->
               <div class="title">
                 <h3>Universitas Muhammadiyah Jakarta</h3>
@@ -180,55 +181,55 @@
         <h4 class="display-4 text-uppercase mx-auto text-shadow mb-5">Technology & Tools</h4>
       </div>
       <div class="row tools-list justify-content-center">
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-right" data-aos-delay="300">
             <i class="fab fa-html5"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-right" data-aos-delay="250">
             <i class="fab fa-css3-alt"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-right" data-aos-delay="200">
             <i class="fab fa-php"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-right" data-aos-delay="150">
             <i class="fab fa-js"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-right" data-aos-delay="100">
             <img src="img/mysql.png" alt="">
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-right" data-aos-delay="50">
             <img src="img/jquery.svg" alt="">
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-left" data-aos-delay="50">
             <i class="fab fa-laravel"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-left" data-aos-delay="100">
             <i class="fab fa-bootstrap"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-left" data-aos-delay="150">
             <i class="fab fa-react"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-left" data-aos-delay="200">
             <img src="img/pwa.svg" alt="">
           </div>
-          <!-- <div class="col col-md-1">
+          <!-- <div class="col col-md-1" data-aos="fade-left">
             <i class="fab fa-node-js"></i>
           </div> -->
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-left" data-aos-delay="250">
             <i class="fab fa-git-alt"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-left" data-aos-delay="300">
             <i class="fab fa-gitlab"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-up" data-aos-delay="100">
             <i class="fab fa-github"></i>
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-up" data-aos-delay="50">
             <img src="img/vscode.png" alt="">
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-up" data-aos-delay="50">
             <img src="img/filezilla.png" alt="">
           </div>
-          <div class="col col-md-1">
+          <div class="col col-md-1" data-aos="fade-up" data-aos-delay="100">
             <img src="img/postman.png" alt="">
           </div>
       </div>
@@ -404,5 +405,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
   </body>
 </html>
