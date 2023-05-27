@@ -63,7 +63,7 @@ body {
 /* PROEJCT */
 #section-project {
   width: 75%;
-  padding: 0 0 8% 0;
+  padding: 0 0 0 0;
 }
 .project-card {
   height: 30vw;
@@ -162,9 +162,17 @@ body {
   margin: 0 auto;
 }
 .exp-projects {
-  font-family: 'Arima Madurai';
+  font-family: "Arima Madurai";
 }
-
+.exp-tech-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exp-tech-list img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
 
 /* EXPERIENCE V2 */
 #section-experience-2 {
@@ -205,14 +213,16 @@ body {
   text-align: right;
 }
 
-.exp-at span, .exp-job span {
+.exp-at span,
+.exp-job span {
   color: whitesmoke;
-  font-family: 'Farsan';
+  font-family: "Farsan";
   font-size: 1.35em;
 }
 
-.exp-at h3, .exp-job h3 {
-  font-family: 'Arima Madurai';
+.exp-at h3,
+.exp-job h3 {
+  font-family: "Arima Madurai";
   font-weight: 700;
   color: #ffffff;
 }
@@ -224,10 +234,10 @@ body {
 .exp-at a {
   display: inline-block;
   color: whitesmoke;
-  font-family: 'Arima Madurai';
+  font-family: "Arima Madurai";
 }
 .exp-at a i {
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 /* Contact */
@@ -316,10 +326,115 @@ body {
 }
 /* Technology */
 
+/* Skills */
+#section-skill {
+  padding: 5% 0 15%;
+  /* background-color: #004e92; */
+  background: linear-gradient(to bottom, #004e92, #004e92, #000428);
+  margin-top: 5%;
+}
+.desc-skill {
+  color: #edf2f3;
+  text-align: center;
+  font-family: "Farsan";
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.pills-skill {
+  display: inline-flex;
+  align-items: center;
+  background-color: #edf2f3;
+  border-radius: 4px;
+  padding: 2px 10px;
+  color: #00031d;
+  font-size: 1rem;
+}
+.pills-skill i {
+  margin-right: 5px;
+}
+.skill-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+.skill-list .skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 8vw;
+  height: 8vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #edf2f3;
+  border-radius: 15px;
+  /* z-index: 1; */
+  transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.4s;
+}
+.skill-list .skill-item:hover {
+  top: -10px;
+  left: -10px;
+}
+.skill-list .skill-item:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  background: #010426;
+  border-radius: 15px;
+  z-index: -1;
+}
+.skill-list .skill-item:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  background: #00d2ff;
+  border-radius: 15px;
+  z-index: -1;
+}
+.skill-list .fab {
+  font-size: 4vw;
+}
+.skill-list img {
+  width: 4vw;
+  height: 4vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+.card-skill {
+  width: 60%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.25rem;
+}
+.card-skill h1 {
+  font-family: "farsan";
+  font-weight: 700;
+}
+/* .skill-list {
+  font-family: "Farsan";
+  color: white;
+  font-size: 1.35rem;
+} */
+/* Skills */
+
 /* Utility */
 .text-shadow {
   text-shadow: -1px 1px 3px #999999, -2px 2px 1px rgba(0, 210, 255, 0.2),
     -3px 3px 1px rgba(0, 210, 255, 0.2), -4px 4px 1px rgba(0, 210, 255, 0.2);
+}
+.text-shadow-white {
+  text-shadow: -1px 1px 3px #f0f0f0, -2px 2px 1px rgb(255 255 255 / 20%),
+    -3px 3px 1px rgb(255 255 255 / 20%), -4px 4px 1px rgb(255 255 255 / 20%);
 }
 i.fab {
   font-size: 1.75rem;
@@ -350,6 +465,13 @@ i.fab {
 }
 .fa-laravel {
   color: #ff2d20;
+}
+.wave-contact {
+  background-color: #82d7f7;
+}
+.wave-contact svg,
+.wave-tech svg {
+  margin-bottom: -1px;
 }
 
 /* MOBILE VERSION */
