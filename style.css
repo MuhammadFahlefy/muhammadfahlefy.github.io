@@ -86,8 +86,8 @@ body {
   transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.4s;
 }
 .project-image .project-overlay img {
-  height: 2.75rem;
-  width: 2.75rem;
+  height: 2.5rem;
+  width: 2.5rem;
   object-fit: contain;
 }
 .project-card:hover .project-overlay {
